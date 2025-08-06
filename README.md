@@ -1,6 +1,6 @@
 # 🧾 Proceso ETL y Análisis Exploratorio – Churn de Clientes | Telecom X
 
-Este repositorio contiene el desarrollo completo del proceso ETL (Extracción, Transformación y Carga) y el análisis exploratorio de los datos de churn de clientes de la empresa ficticia *Telecom X*.
+Este repositorio contiene el desarrollo completo del proceso ETL (Extracción, Transformación y Carga) y el análisis exploratorio de los datos de churn de clientes de la empresa  *Telecom X*.
 
 ---
 
@@ -9,7 +9,7 @@ Este repositorio contiene el desarrollo completo del proceso ETL (Extracción, T
 ### 1. 📥 Extracción
 
 - Lectura directa del archivo `.json` desde un repositorio remoto:
-  - URL: `https://raw.githubusercontent.com/ingridcristh/challenge2-data-science-LATAM/refs/heads/main/TelecomX_Data.json`
+  - URL: `https://raw.githubusercontent.com/LeoSR02/challenge2-data-science-LATAM/refs/heads/main/TelecomX_Data.json`
 
 ---
 
@@ -19,28 +19,29 @@ Este repositorio contiene el desarrollo completo del proceso ETL (Extracción, T
   - Columnas: `customer`, `phone`, `account`, `internet`.
 
 - **Limpieza de datos**:
-  - Conversión de tipos (`object` → `float`).
+  - Conversión de tipos (`object` → `float`, object → `boolean` ).
   - Eliminación de columnas redundantes.
   - Verificación y tratamiento de valores nulos y duplicados.
 
 - **Renombramiento y creación de nuevas variables**:
   - Ejemplo:  
-    - `DailyCharges = ChargesMonthly / 30`
+    - `Cuentas_Diarias = Charges_Monthly / 30`
 
 - **Conversión de variables categóricas a binarias**:
   - Ejemplo: `"Yes"` / `"No"` → `1` / `0`
 
 - **Estandarización de valores**:
-  - Limpieza y homogeneización de la columna `Churn`.
-  - Mapeo numérico para `Contract`:  
-    - `"Month-to-month"` → `1`, `"One year"` → `2`, `"Two year"` → `3`
+  - Limpieza y transformación de datos
+  - Ejemplo: replace{
+            'No phone service': 'No',
+            'No internet service': 'No'}
 
 ---
 
 ### 3. 💾 Carga
 
-- El DataFrame final procesado se guarda como:
-  - `Churn_de_Clientes.json`
+- DataFrame final procesado:
+  - `df_final1`
 
 ---
 
@@ -51,6 +52,7 @@ Este repositorio contiene el desarrollo completo del proceso ETL (Extracción, T
 - Gráfico tipo torta que muestra la proporción entre:
   - Clientes que permanecen
   - Clientes que se dieron de baja
+    ![Distribución de retiro/abandono (churn)](graficos/grafico1.png)
 
 ---
 
