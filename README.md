@@ -47,14 +47,44 @@ Este repositorio contiene el desarrollo completo del proceso ETL (Extracción, T
 
 ## 📈 Análisis Exploratorio
 
-### 🔘 Proporción de churn
+### 🔘 Gráficos
 
-- Gráfico tipo torta que muestra la proporción entre:
-  - Clientes que permanecen
-  - Clientes que se dieron de baja
-    ![Distribución de retiro/abandono (churn)](graficos/grafico1.png)
+![Distribución de retiro/abandono (churn)](graficos/grafico1.png)
 
+Distribución de clientes según su estado de retiro o abandono (churn):
+- El 71.2% de los clientes no se han perdido.
+- El 25.7% sí se han perdido.
+- El 3.1% tiene estado desconocido (NA).
 ---
+![Retiro de Clientes por Género](graficos/grafico2.png)
+
+El gráfico muestra el retiro de clientes por género:
+- La proporción de clientes perdidos es similar entre mujeres (13.3%) y hombres (13.2%).
+- La mayoría de clientes, tanto hombres como mujeres, no se han perdido.
+---
+![Retiro de Clietes por tipo de contrato](graficos/grafico3.png)
+
+Clientes que se retiraron por tipo de contrato:
+- El gráfico muestra que los clientes con contrato mensual tienen una mayor tasa de retiro, mientras que los de 1 año y 2 años presentan menos abandono.
+---
+![Retiro de Clientes por Método de Pago](graficos/grafico4.png)
+
+Clientes que se retiraron según método de pago:
+- El gráfico muestra que los clientes que pagan con cheque electrónico tienen la mayor tasa de retiro, mientras que los que usan métodos automáticos (tarjeta o transferencia) presentan menores tasas de abandono.
+---
+![Retiro de Clientes por Método de Pago](graficos/grafico5.png)
+
+El gráfico muestra un boxplot comparando el cargo total facturado ($) entre clientes que se retiraron y los que no se retiraron.
+
+- Los clientes que no se retiraron presentan una mediana (línea central del recuadro) más alta, lo que indica que su gasto acumulado fue mayor en comparación con los clientes que sí se retiraron.
+
+- Además, el rango intercuartílico (el ancho del box) y la dispersión son mayores para los clientes no retirados, lo que sugiere más variabilidad en los cargos facturados dentro de este grupo.
+
+- En cambio, los clientes que sí se retiraron muestran una mediana considerablemente más baja y un rango más estrecho, lo que sugiere que la mayoría tuvo cargos bajos antes de abandonar.
+
+- También se observan muchos outliers (puntos atípicos) en el grupo de clientes retirados, indicando que aunque pocos, algunos clientes con altos cargos también se retiraron.
+
+- En general, el gráfico sugiere que los clientes con cargos más bajos fueron más propensos a retirarse, aunque hay excepciones.
 
 ### 🔥 Heatmap de características categóricas
 
