@@ -84,9 +84,3 @@ Este repositorio contiene el desarrollo completo del proceso ETL (Extracción, T
 - Gráficos de análisis visual se muestran inline en notebooks (no se exportan todos).
 
 ---
-
-## 📌 Autor
-
-Desarrollado por:  Rodrigo Ferenus 
-
----
