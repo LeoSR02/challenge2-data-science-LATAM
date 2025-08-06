@@ -99,33 +99,25 @@ El gráfico muestra la distribución del **cargo total** facturado entre cliente
 
 - Esto sugiere que los clientes con **menores cargos acumulados fueron más propensos a retirarse**, mientras que quienes acumularon mayores cargos **tendieron a permanecer activos**.
 ---
-### 🔥 Heatmap de características categóricas
-
-- Análisis cruzado de:
-  - **Eje Y**: `Género + Tipo de contrato`
-  - **Eje X**: `Tipo de servicio de internet`
-
-- Visualización tipo semáforo:
-  - Verde → baja evasión
-  - Rojo → alta evasión
-
----
-
-### 📊 Variables numéricas
-
-- **Boxplots comparativos** para analizar:
-  - `ChargesMonthly` → Clientes que se dieron de baja tienen gastos más altos.
-  - `Tenure` → Clientes que permanecen tienen mayor tiempo de permanencia.
-
----
 
 
----
+## ✅ Recomendaciones
 
-## 📁 Archivos Generados
 
-- `Churn_de_Clientes.json` → Dataset procesado.
-- `grafico_churn.png` → Gráfico de torta de churn.
-- Gráficos de análisis visual se muestran inline en notebooks (no se exportan todos).
+- **Ampliar y modernizar métodos de pago digitales**  
+  Integrar más opciones de pago como **billeteras digitales**, **códigos QR**, **apps bancarias** y **débito automático**, facilitando una experiencia de pago rápida, segura y sin fricciones.
+
+- **Incentivar el uso de pagos automáticos**  
+  Otorgar **bonificaciones o descuentos exclusivos** a clientes que activen el débito automático. Esto fomenta la permanencia y reduce la probabilidad de abandono por olvido o molestias en el pago.
+
+- **Reformular los contratos mensuales para mejorar la retención**  
+  Diseñar estrategias de fidelización como:
+  - **"3 meses pagados + 1 gratis"**
+  - **Descuentos progresivos por permanencia**
+  - **Beneficios exclusivos a partir del segundo mes**  
+  Esto transforma el contrato mensual en una propuesta más atractiva a mediano plazo.
+
+- **Implementar alertas tempranas para detectar clientes en riesgo**  
+  Identificar señales como **bajo uso de servicios**, **inactividad reciente** o **reducción en el consumo**, y activar campañas personalizadas (e.g., recordatorios, beneficios dirigidos, encuestas rápidas) para prevenir el **churn**.
 
 ---
